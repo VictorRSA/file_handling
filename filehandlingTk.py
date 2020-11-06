@@ -4,8 +4,10 @@ import tkinter
 from tkinter import simpledialog, messagebox, filedialog, Text
 
 root = Tk()
-root.geometry("600x600")
+root.geometry("1000x10"
+              "00")
 root.title("********Text Files Creation System:********")
+
 
 
 def clear():
@@ -57,8 +59,9 @@ def display():
         msg = txt.get()
         txt.insert("end",u"\n{}".format(msg))
 
-
-
+file =open ('/home/admin-lc/Desktop/thursday.txt','w')
+file.write("i ts hot")
+file.close()
 label = Label(root, text="My weekend activities", fg="blue", font=("Helvetica",16))
 label.grid(row=0, column=0, padx=25, pady=25)
 
